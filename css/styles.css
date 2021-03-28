@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin: 0;
+    background-color: #1c1427;
+}
+
+.header{
+background-color: #1c1427;
+color:wheat;
+margin-bottom: 20px;
+width: 100%;
+padding: 20px;
+}
+.header:hover{
+    -webkit-box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    6px 6px 4px 4px rgba(0, 0, 0, 1);
+    box-shadow:         6px 6px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.head h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.head h3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Middle{
+    margin-bottom: 20px;
+}
+
+.bg-col{
+    background-color: #ccffbd;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.bg-col:hover{
+    -webkit-box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    6px 6px 4px 4px rgba(0, 0, 0, 1);
+    box-shadow:         6px 6px 4px 4px rgba(0, 0, 0, 1);
+}
+.bg-col1{
+    background-color: #7eca9c;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.bg-col1:hover{
+    -webkit-box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    6px 6px 4px 4px rgba(0, 0, 0, 1);
+    box-shadow:         6px 6px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.Base{
+    background-color: #1c1427;
+    color:wheat;
+    padding: 20px;
+    /* justify-content: center; */
+}
+.Base:hover{
+    -webkit-box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    6px 6px 4px 4px rgba(0, 0, 0, 1);
+    box-shadow:         6px 6px 4px 4px rgba(0, 0, 0, 1);
+}
+
+#countriesInfo{
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+}
+
+.col{
+    color: wheat;
+}
+
+.Main-section{
+    width: 70%;
+    margin: auto;
+    background-color:teal;
+    margin-top: 50px;
+    padding: 20px;
+}

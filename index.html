@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Dashboard</title>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <section class="container-fluid Main-section">
+            
+        <section class="container header">
+            <div class="row">
+                <div class="col-md-12 head">
+                    <div>
+                        <h1>COVID-19 DASHBOARD</h1>
+                    </div>
+                    <div>
+                        <h3 id="dateSpace">date</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid Middle">
+            <div class="row">
+                <div class="col-md-6 Global">
+                    <div class="bg-col">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <h3>GLOBAL STATISTICS</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div>
+                                    <li>New Confirmed:<span id="NC"></span></li>
+                                    <li>New Deaths:<span id="ND"></span></li>
+                                    <li>New Recovered:<span id="NR"></span></li>
+                                    <li>Total Confirmed:<span id="TC"></span></li>
+                                    <li>Total Deaths:<span id="TD"></span></li>
+                                    <li>Total Recovered:<span id="TR"></span></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 Nigeria">
+                    <div class="bg-col1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                    <h3>NIGERIA STATISTICS</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div>
+                                    <li>New Confirmed:<span id="NCng"></span></li>
+                                    <li>New Deaths:<span id="NDng"></span></li>
+                                    <li>New Recovered:<span id="NRng"></span></li>
+                                    <li>Total Confirmed:<span id="TCng"></span></li>
+                                    <li>Total Deaths:<span id="TDng"></span></li>
+                                    <li>Total Recovered:<span id="TRng"></span></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container Base">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>COUNTRY BY COUNTRY STATISTICS</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="countriesInfo">
+
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web.js"></script>
+</body>
+</html>
