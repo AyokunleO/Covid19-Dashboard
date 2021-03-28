@@ -28,9 +28,27 @@ function Covid (){
 
             // Country By Country Statistics
             var county = data.Countries;
-            $("#countriesInfo").html(CountryByCountry(county));
+            // $("#countriesInfo").html(CountryByCountry(county));
+            $(document).ready( function () {
+                $('#test').DataTable();
+            });
+            $('#countriesInfo').html(function(){
+                $('#test').append(CountryByCountry(county))
+            });
 
 
+            // $('#test').DataTable( {
+            //     data: data,
+            //     columns: [
+            //         { data: 'Country' },
+            //         { data: 'TotalConfirmed' },
+            //         { data: 'TotalDeaths' },
+            //         { data: 'TotalRecovered' },
+            //         { data: 'NewDeaths' },
+            //         { data: 'NewConfirmed' },
+            //         { data: 'NewRecovered' }
+            //     ]
+            // } );
         });
     
 
@@ -38,22 +56,25 @@ function Covid (){
 var tableString;
 function CountryByCountry(county){
 
-    tableString = `
-    <table border = "1" class = "col">
-    <tr>
-        <th>Country</th>
-        <th>Total Confirmed</th>
-        <th>Total Deaths</th>
-        <th>Total Recovered</th>
-        <th>New Deaths</th>
-        <th>New Confirmed</th>
-        <th>New Recovered</th>
-    </tr>
-    `;
+    // tableString = `
+    // <table border = "1" class = "col" id = "test">
+    // <thead>
+    // <tr>
+    //     <th>Country</th>
+    //     <th>Total Confirmed</th>
+    //     <th>Total Deaths</th>
+    //     <th>Total Recovered</th>
+    //     <th>New Deaths</th>
+    //     <th>New Confirmed</th>
+    //     <th>New Recovered</th>
+    // </tr>
+    // </thead>
+    // `;
 
 
     for(const [i, item] of county.entries()){
         tableString += `
+        
         <tr>
         <td>${item.Country}</td>
         <td>${item.TotalConfirmed}</td>
@@ -66,9 +87,10 @@ function CountryByCountry(county){
         `;
     }
 
-tableString +=`
-    </table>
-`;
+// tableString +=`
+//     </tbody>
+//     </table>
+// `;
 
 return tableString;
 }
